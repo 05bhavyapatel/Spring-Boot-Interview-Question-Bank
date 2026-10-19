@@ -1,0 +1,414 @@
+Spring Boot Interview Question Bank
+1. Spring Framework fundamentals
+- [ ] What is the Spring Framework?
+- [ ] What problems does Spring solve?
+- [ ] What is Inversion of Control (IoC)?
+- [ ] What is Dependency Injection (DI)?
+- [ ] What is the difference between IoC and DI?
+- [ ] What is the Spring IoC container?
+- [ ] What is the difference between BeanFactory and ApplicationContext?
+- [ ] What is a Spring bean?
+- [ ] How does Spring create and manage beans?
+- [ ] What are the different bean scopes?
+- [ ] What is the Spring bean lifecycle?
+- [ ] What are constructor injection and setter injection?
+- [ ] Why is constructor injection generally preferred?
+- [ ] What is component scanning?
+- [ ] What is the difference between @Component, @Service, and @Repository?
+- [ ] What is the purpose of @Autowired?
+- [ ] What is the difference between @Primary and @Qualifier?
+- [ ] What is a circular dependency?
+- [ ] What are Spring configuration classes?
+- [ ] What is the difference between @Bean and @Component?
+2. Spring Boot basics
+- [ ] What is Spring Boot?
+- [ ] What is the difference between Spring and Spring Boot?
+- [ ] What are the advantages of Spring Boot?
+- [ ] What is auto-configuration?
+- [ ] How does Spring Boot auto-configuration work?
+- [ ] What is @SpringBootApplication?
+- [ ] What annotations does @SpringBootApplication combine?
+- [ ] What are Spring Boot starters?
+- [ ] What is Spring Boot dependency management?
+- [ ] What is Spring Initializr?
+- [ ] What is an embedded server?
+- [ ] Why does Spring Boot use embedded Tomcat?
+- [ ] What is the default server port?
+- [ ] How do you change the server port?
+- [ ] How do you disable the embedded web server?
+- [ ] What is the difference between application.properties and application.yml?
+- [ ] What are Spring profiles?
+- [ ] How do you activate a profile?
+- [ ] How do you pass configuration through environment variables?
+- [ ] What is the difference between @Value and @ConfigurationProperties?
+- [ ] What are conditional annotations such as @ConditionalOnProperty?
+- [ ] How do you exclude an auto-configuration class?
+- [ ] What happens when a Spring Boot application starts?
+- [ ] What is the role of SpringApplication.run()?
+3. Spring MVC and REST APIs
+- [ ] What is Spring MVC?
+- [ ] What is the request-response lifecycle in Spring MVC?
+- [ ] What is DispatcherServlet?
+- [ ] What is the difference between @Controller and @RestController?
+- [ ] What is the difference between @RequestMapping and @GetMapping?
+- [ ] What is the difference between @PathVariable and @RequestParam?
+- [ ] What is @RequestBody?
+- [ ] What is @ResponseBody?
+- [ ] What is ResponseEntity?
+- [ ] What are HTTP methods: GET, POST, PUT, PATCH and DELETE?
+- [ ] What is the difference between PUT and PATCH?
+- [ ] What are HTTP status codes 200, 201, 204, 400, 401, 403, 404 and 500?
+- [ ] What is REST architecture?
+- [ ] What are the principles of REST APIs?
+- [ ] What is the difference between REST and SOAP?
+- [ ] What is statelessness in REST?
+- [ ] What is content negotiation?
+- [ ] How does Spring convert Java objects to JSON?
+- [ ] What is Jackson?
+- [ ] How do you validate request data using @Valid?
+- [ ] What are @NotNull, @NotBlank, @Size and @Email?
+- [ ] How do you implement pagination and sorting in REST APIs?
+- [ ] How do you version REST APIs?
+- [ ] How do you upload and download files?
+- [ ] What is CORS?
+- [ ] What is an idempotent API?
+- [ ] How do you prevent duplicate requests in a payment or order API?
+4. Exception handling and validation
+- [ ] What is exception handling in Spring Boot?
+- [ ] What is the difference between checked and unchecked exceptions?
+- [ ] What is the difference between throw and throws?
+- [ ] What is the difference between @ControllerAdvice and @RestControllerAdvice?
+- [ ] What is @ExceptionHandler?
+- [ ] How do you handle exceptions globally?
+- [ ] How do you create a custom exception?
+- [ ] How do you return a standard error response?
+- [ ] How do you handle validation exceptions?
+- [ ] What is the difference between MethodArgumentNotValidException and ConstraintViolationException?
+- [ ] How do you handle an invalid request body?
+- [ ] How do you handle a database exception?
+- [ ] How do you avoid exposing sensitive information in error responses?
+- [ ] How do you log exceptions properly?
+5. Spring Data JPA and Hibernate
+- [ ] What is ORM?
+- [ ] What is JPA?
+- [ ] What is Hibernate?
+- [ ] What is the difference between JPA and Hibernate?
+- [ ] What is Spring Data JPA?
+- [ ] What is the difference between JDBC, JPA, Hibernate and Spring Data JPA?
+- [ ] What is an entity?
+- [ ] What is the purpose of @Entity and @Table?
+- [ ] What is the purpose of @Id and @GeneratedValue?
+- [ ] What are the different ID generation strategies?
+- [ ] What is a JPA repository?
+- [ ] What is the difference between CrudRepository, JpaRepository and PagingAndSortingRepository?
+- [ ] How do derived query methods work?
+- [ ] What is the purpose of @Query?
+- [ ] What is the difference between JPQL and native SQL?
+- [ ] What is @Modifying?
+- [ ] What is the difference between save() and saveAndFlush()?
+- [ ] What is the difference between findById() and getReferenceById()?
+- [ ] What are entity states: transient, managed, detached and removed?
+- [ ] What is the persistence context?
+- [ ] What is dirty checking?
+- [ ] What is the first-level cache in Hibernate?
+- [ ] What is the second-level cache?
+- [ ] What is lazy loading?
+- [ ] What is eager loading?
+- [ ] What is the N+1 query problem?
+- [ ] How do you solve the N+1 query problem?
+- [ ] What is the difference between JOIN FETCH and @EntityGraph?
+- [ ] What are @OneToOne, @OneToMany, @ManyToOne and @ManyToMany?
+- [ ] What is the owning side of a relationship?
+- [ ] What is mappedBy?
+- [ ] What is cascading in JPA?
+- [ ] What is orphanRemoval?
+- [ ] What is the difference between FetchType.LAZY and FetchType.EAGER?
+- [ ] What is the difference between EntityManager and JpaRepository?
+- [ ] What is optimistic locking?
+- [ ] What is pessimistic locking?
+- [ ] What is the purpose of @Version?
+- [ ] What is the difference between entity and DTO?
+- [ ] Why should you avoid returning JPA entities directly from REST APIs?
+- [ ] How do you implement pagination using Pageable?
+- [ ] What is the difference between Page, Slice and List?
+- [ ] How do you execute a stored procedure?
+- [ ] How do you configure multiple data sources?
+6. Transactions and database connectivity
+- [ ] What is a database transaction?
+- [ ] What are ACID properties?
+- [ ] What is @Transactional?
+- [ ] How does Spring manage transactions?
+- [ ] What is transaction propagation?
+- [ ] Explain REQUIRED, REQUIRES_NEW and SUPPORTS.
+- [ ] What is transaction isolation?
+- [ ] Explain READ_UNCOMMITTED, READ_COMMITTED, REPEATABLE_READ and SERIALIZABLE.
+- [ ] What is a dirty read?
+- [ ] What is a non-repeatable read?
+- [ ] What is a phantom read?
+- [ ] When does Spring roll back a transaction?
+- [ ] Why does @Transactional usually roll back on unchecked exceptions but not checked exceptions by default?
+- [ ] What is rollbackFor?
+- [ ] Why might @Transactional not work when one method calls another method in the same class?
+- [ ] What is transaction propagation in nested service calls?
+- [ ] What happens if an exception is caught and swallowed inside a transactional method?
+- [ ] What is connection pooling?
+- [ ] What is HikariCP?
+- [ ] What is DataSource?
+- [ ] What is JdbcTemplate?
+- [ ] What is the difference between JDBC and Spring Data JPA?
+- [ ] How do you configure database credentials securely?
+- [ ] How do you manage database schema changes using Flyway or Liquibase?
+7. Spring Security and JWT
+- [ ] What is Spring Security?
+- [ ] What is the difference between authentication and authorization?
+- [ ] What is the Spring Security filter chain?
+- [ ] What is SecurityFilterChain?
+- [ ] What is the purpose of UserDetailsService?
+- [ ] What is UserDetails?
+- [ ] What is PasswordEncoder?
+- [ ] Why should passwords be hashed instead of stored as plain text?
+- [ ] What is BCryptPasswordEncoder?
+- [ ] What is JWT?
+- [ ] What are the three parts of a JWT?
+- [ ] How does JWT authentication work?
+- [ ] What is the difference between access tokens and refresh tokens?
+- [ ] Where should tokens be stored?
+- [ ] How do you validate a JWT?
+- [ ] How do you configure role-based access?
+- [ ] What is the difference between roles and authorities?
+- [ ] What are @PreAuthorize and @Secured?
+- [ ] What is @EnableMethodSecurity?
+- [ ] What is the difference between 401 and 403?
+- [ ] What is CSRF?
+- [ ] What is CORS, and how is it different from CSRF?
+- [ ] What is OAuth 2.0?
+- [ ] What is OpenID Connect?
+- [ ] What is the difference between session-based authentication and token-based authentication?
+- [ ] How do you implement logout or token revocation with JWT?
+- [ ] How do you secure public and private API endpoints?
+- [ ] How do you protect against brute-force login attempts?
+8. Spring Boot caching and asynchronous processing
+- [ ] What is caching?
+- [ ] What are the advantages and disadvantages of caching?
+- [ ] How do you enable caching using @EnableCaching?
+- [ ] What is @Cacheable?
+- [ ] What is @CachePut?
+- [ ] What is @CacheEvict?
+- [ ] What is the difference between @Cacheable and @CachePut?
+- [ ] What is cache invalidation?
+- [ ] What is cache TTL?
+- [ ] What is the difference between local caching and distributed caching?
+- [ ] How do you integrate Redis with Spring Boot?
+- [ ] What happens when cached data becomes stale?
+- [ ] What is cache stampede?
+- [ ] What is asynchronous processing?
+- [ ] What is @Async?
+- [ ] How do you configure a custom executor?
+- [ ] What is CompletableFuture?
+- [ ] How do you handle exceptions in asynchronous methods?
+- [ ] What happens if an @Async method is called from the same class?
+- [ ] What is the difference between synchronous and asynchronous execution?
+- [ ] What is the difference between asynchronous processing and multithreading?
+9. Microservices
+- [ ] What are microservices?
+- [ ] What is the difference between monolithic and microservices architecture?
+- [ ] What are the advantages and disadvantages of microservices?
+- [ ] What is service discovery?
+- [ ] What is a service registry?
+- [ ] What is API Gateway?
+- [ ] What is Spring Cloud?
+- [ ] What is OpenFeign?
+- [ ] What is the difference between RestTemplate, WebClient and RestClient?
+- [ ] What is load balancing?
+- [ ] What is the difference between client-side and server-side load balancing?
+- [ ] What is a circuit breaker?
+- [ ] What is Resilience4j?
+- [ ] What are retries, timeouts and fallbacks?
+- [ ] What is a distributed system?
+- [ ] How do microservices communicate with one another?
+- [ ] What is synchronous versus asynchronous communication?
+- [ ] What is distributed tracing?
+- [ ] What are correlation IDs and trace IDs?
+- [ ] What is centralized configuration?
+- [ ] How do you handle failures between services?
+- [ ] How do you maintain data consistency across microservices?
+- [ ] What is the Saga pattern?
+- [ ] What is the difference between Saga and a distributed transaction?
+- [ ] What is the database-per-service pattern?
+- [ ] How do you prevent duplicate event processing?
+- [ ] What is the transactional outbox pattern?
+- [ ] How do you secure communication between microservices?
+10. Kafka and messaging
+- [ ] What is Apache Kafka?
+- [ ] Why do applications use message queues?
+- [ ] What is a Kafka topic?
+- [ ] What is a partition?
+- [ ] What is an offset?
+- [ ] What is a consumer group?
+- [ ] What is the difference between a Kafka producer and consumer?
+- [ ] How do you integrate Kafka with Spring Boot?
+- [ ] What are KafkaTemplate and @KafkaListener?
+- [ ] How do you handle message serialization and deserialization?
+- [ ] What happens when a consumer fails?
+- [ ] What is message acknowledgment?
+- [ ] What are retries and dead-letter topics?
+- [ ] What is at-most-once, at-least-once and exactly-once processing?
+- [ ] How do you prevent duplicate processing?
+- [ ] What is the difference between Kafka and RabbitMQ?
+- [ ] How do you handle failed messages?
+- [ ] How do you maintain message ordering?
+11. Testing Spring Boot applications
+- [ ] What is unit testing?
+- [ ] What is integration testing?
+- [ ] What is the difference between unit and integration testing?
+- [ ] What are JUnit and Mockito?
+- [ ] What are @Test, @BeforeEach and @AfterEach?
+- [ ] What is the difference between @Mock and @InjectMocks?
+- [ ] What is the difference between a mock and a spy?
+- [ ] What are when(), thenReturn() and verify()?
+- [ ] How do you test a service class?
+- [ ] How do you test a REST controller?
+- [ ] What is @WebMvcTest?
+- [ ] What is @SpringBootTest?
+- [ ] What is MockMvc?
+- [ ] What is @DataJpaTest?
+- [ ] What is the difference between @MockBean and Mockito's @Mock? How does this vary by Spring Boot version?
+- [ ] How do you test exception handling?
+- [ ] How do you test validation failures?
+- [ ] How do you test repository methods?
+- [ ] How do you test code that calls an external API?
+- [ ] What is Testcontainers?
+- [ ] How do you test transactional rollback?
+- [ ] How do you measure code coverage?
+Spring Boot supports full-application tests and focused tests for individual layers. These are important distinctions to understand. 
+
+Home
++1
+
+
+
+12. Actuator, logging and monitoring
+- [ ] What is Spring Boot Actuator?
+- [ ] What are Actuator endpoints?
+- [ ] What are /actuator/health, /actuator/info and /actuator/metrics?
+- [ ] How do you enable and expose Actuator endpoints safely?
+- [ ] How do you create a custom health indicator?
+- [ ] What is application monitoring?
+- [ ] What is the difference between logs, metrics and traces?
+- [ ] What is SLF4J?
+- [ ] What is Logback?
+- [ ] What are DEBUG, INFO, WARN and ERROR log levels?
+- [ ] How do you configure logging in Spring Boot?
+- [ ] How do you write logs to a file?
+- [ ] What is centralized logging?
+- [ ] How do you trace a request across multiple microservices?
+- [ ] How do you monitor database connection pool usage?
+- [ ] How do you diagnose high memory or CPU usage?
+Actuator provides application health and monitoring endpoints, but exposing them carelessly can reveal sensitive information. 
+
+Home
+
+
+
+13. Advanced Spring Boot and production
+- [ ] What happens internally when Spring Boot starts?
+- [ ] What is CommandLineRunner?
+- [ ] What is ApplicationRunner?
+- [ ] What is the difference between CommandLineRunner and ApplicationRunner?
+- [ ] What are application events and listeners?
+- [ ] What is AOP?
+- [ ] What are aspects, advice, pointcuts and join points?
+- [ ] What is the difference between Spring AOP and AspectJ?
+- [ ] What are JDK dynamic proxies and CGLIB proxies?
+- [ ] How does Spring implement declarative transactions?
+- [ ] What is the difference between filters, interceptors and AOP?
+- [ ] What is the difference between a filter and HandlerInterceptor?
+- [ ] What is BeanPostProcessor?
+- [ ] What is BeanFactoryPostProcessor?
+- [ ] What is lazy initialization?
+- [ ] How do you improve Spring Boot startup time?
+- [ ] How do you improve API response time?
+- [ ] How do you prevent memory leaks?
+- [ ] How do you manage secrets and environment-specific configuration?
+- [ ] How do you implement graceful shutdown?
+- [ ] How do you handle database connection pool exhaustion?
+- [ ] How do you diagnose an application that works locally but fails in production?
+- [ ] How do you deploy Spring Boot using Docker?
+- [ ] What is a multi-stage Docker build?
+- [ ] How do you configure health checks in a container?
+- [ ] How do you implement CI/CD for a Spring Boot application?
+14. Scenario-based interview questions
+These are especially useful for someone with real backend development experience.
+- [ ] An API takes five seconds to respond. How would you debug it?
+- [ ] An API works in Postman but fails from the frontend. What would you check?
+- [ ] Your application suddenly starts returning HTTP 500. How would you investigate?
+- [ ] A database query is slow. How would you identify the bottleneck?
+- [ ] Your application sends duplicate emails. How would you prevent this?
+- [ ] Two users update the same record simultaneously. How would you handle it?
+- [ ] A transaction updates one table but fails before updating another. What should happen?
+- [ ] Redis contains outdated data. How would you fix it?
+- [ ] A downstream service is unavailable. How should your API behave?
+- [ ] A Kafka consumer processes the same message twice. How would you handle it?
+- [ ] Your application runs out of database connections. What would you inspect?
+- [ ] A scheduled job runs twice across multiple application instances. How would you prevent duplicate execution?
+- [ ] An endpoint should be accessible only to administrators. How would you implement this?
+- [ ] How would you implement pagination for millions of records?
+- [ ] How would you prevent a user from placing the same order twice?
+- [ ] How would you design a centralized exception-handling mechanism?
+- [ ] How would you safely deploy a database schema change?
+- [ ] How would you debug a bean creation or dependency injection failure?
+- [ ] How would you investigate a LazyInitializationException?
+- [ ] How would you troubleshoot an unexpected transaction commit or rollback?
+15. Java questions you must prepare alongside Spring Boot
+Spring Boot interviews are still Java interviews. Prepare these separately.
+- [ ] What are the four pillars of OOP?
+- [ ] What is the difference between an interface and an abstract class?
+- [ ] What is the difference between method overloading and overriding?
+- [ ] What is the difference between == and equals()?
+- [ ] Why must equals() and hashCode() be consistent?
+- [ ] What is the difference between String, StringBuilder and StringBuffer?
+- [ ] What are checked and unchecked exceptions?
+- [ ] What is the Java Collections Framework?
+- [ ] What is the difference between List, Set and Map?
+- [ ] How does HashMap work internally?
+- [ ] What is the difference between HashMap and ConcurrentHashMap?
+- [ ] How does HashSet work internally?
+- [ ] What is the difference between ArrayList and LinkedList?
+- [ ] What is the difference between Comparable and Comparator?
+- [ ] What are generics?
+- [ ] What are functional interfaces?
+- [ ] What are lambda expressions?
+- [ ] What is the Stream API?
+- [ ] What is the difference between map() and flatMap()?
+- [ ] What is the difference between filter() and map()?
+- [ ] What is Optional?
+- [ ] What is the difference between orElse() and orElseGet()?
+- [ ] What is the difference between intermediate and terminal stream operations?
+- [ ] What is the difference between synchronized and volatile?
+- [ ] What is a thread pool?
+- [ ] What are ExecutorService and CompletableFuture?
+- [ ] What is the Java Memory Model?
+- [ ] What is garbage collection?
+- [ ] What are immutable objects?
+- [ ] What are records and sealed classes in modern Java?
+16. SQL questions you must prepare alongside Spring Boot
+- [ ] What is the difference between primary key and foreign key?
+- [ ] What is the difference between WHERE and HAVING?
+- [ ] What is the difference between GROUP BY and ORDER BY?
+- [ ] Explain INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL OUTER JOIN.
+- [ ] What is the difference between a subquery and a join?
+- [ ] What is an index, and when should you use one?
+- [ ] What is the difference between clustered and non-clustered indexes?
+- [ ] What is normalization?
+- [ ] What is denormalization?
+- [ ] What are window functions?
+- [ ] What is a common table expression (CTE)?
+- [ ] How do you find duplicate records?
+- [ ] How do you find the second-highest salary?
+- [ ] How do you find the top three salaries in each department?
+- [ ] How do you optimize a slow SQL query?
+- [ ] What is an execution plan?
+- [ ] What is the difference between DELETE, TRUNCATE and DROP?
+- [ ] What are database constraints?
+- [ ] What is a deadlock?
+- [ ] How do database indexes affect INSERT and UPDATE operations?
