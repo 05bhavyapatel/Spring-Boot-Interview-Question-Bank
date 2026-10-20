@@ -1,11 +1,12 @@
 Spring Boot Interview Question Bank
 1. Spring Framework fundamentals
-- [ ] What is the Spring Framework?
-- [ ] What problems does Spring solve?
-- [ ] What is Inversion of Control (IoC)?
-- [ ] What is Dependency Injection (DI)?
-- [ ] What is the difference between IoC and DI?
-- [ ] What is the Spring IoC container?
+- [1] What is the Spring Framework?
+- [2] What problems does Spring solve?
+- [3] What is Inversion of Control (IoC)?
+- [4] What is Dependency Injection (DI)?
+- [5] What is the difference between IoC and DI?
+   --Easy way to remember: IoC is who controls object management? DI is how are dependencies provided?
+- [6] What is the Spring IoC container?
 - [ ] What is the difference between BeanFactory and ApplicationContext?
 - [ ] What is a Spring bean?
 - [ ] How does Spring create and manage beans?
