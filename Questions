@@ -7,7 +7,8 @@ Spring Boot Interview Question Bank
 - [5] What is the difference between IoC and DI?
    --Easy way to remember: IoC is who controls object management? DI is how are dependencies provided?
 - [6] What is the Spring IoC container?
-- [ ] What is the difference between BeanFactory and ApplicationContext?
+- [7] What is the difference between BeanFactory and ApplicationContext?
+   --BeanFactory = basic container. ApplicationContext = advanced container used in most real-world Spring applications.
 - [ ] What is a Spring bean?
 - [ ] How does Spring create and manage beans?
 - [ ] What are the different bean scopes?
